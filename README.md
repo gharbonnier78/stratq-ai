@@ -71,7 +71,3 @@ From the `paper/` directory:
 pdflatex main.tex
 pdflatex main.tex
 ```
-
-## Suggested GitHub repository name
-
-`testing-beyond-automation`
