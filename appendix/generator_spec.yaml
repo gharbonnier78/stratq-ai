@@ -1,0 +1,30 @@
+generator:
+  name: biometric_variability_generator
+  version: 1.4.2
+  seed_policy: deterministic_per_test_id
+
+parameters:
+  citizen_state:
+    - new_applicant
+    - active_traveler
+    - watchlisted
+    - expired_document
+
+  biometric_context:
+    - good_quality_capture
+    - low_light
+    - partial_face
+    - presentation_attack
+
+  operational_context:
+    - normal
+    - degraded_network
+    - border_congestion
+    - registry_latency
+
+expected_artifacts:
+  - generated_input_payload
+  - expected_decision
+  - expected_trace_topology
+  - expected_audit_event
+  - evidence_record

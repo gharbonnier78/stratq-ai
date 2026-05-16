@@ -1,0 +1,63 @@
+{
+  "test_id": "BIO-VERIFY-ATTACK-042",
+  "claim": "Presentation attacks are rejected under remote verification conditions",
+  "hypothesis_type": "security / biometric PAD hypothesis",
+  "prior": {
+    "claim_valid_probability": 0.7,
+    "prior_model": "Beta(7,3)",
+    "source": [
+      "architecture_review",
+      "previous_incidents",
+      "expert_elicitation",
+      "observability_readiness"
+    ],
+    "confidence_in_prior": "medium"
+  },
+  "assumptions": [
+    {
+      "id": "A-001",
+      "statement": "PAD service is enabled",
+      "owner": "Security QA",
+      "p_false": 0.05,
+      "impact": 5,
+      "dependency_multiplier": 2,
+      "R0": 0.5,
+      "review_date": "2026-06-01"
+    },
+    {
+      "id": "A-002",
+      "statement": "OTel collector is reachable",
+      "owner": "DevOps",
+      "p_false": 0.1,
+      "impact": 4,
+      "dependency_multiplier": 1.5,
+      "R0": 0.6,
+      "review_date": "2026-06-01"
+    }
+  ],
+  "input_generator": {
+    "name": "biometric_variability_generator",
+    "version": "1.4.2",
+    "seed": "20260515-042",
+    "repository_commit": "a17f92c"
+  },
+  "expected_decision": "REJECT",
+  "expected_events": [
+    "PAD_ALERT",
+    "AUDIT_REJECTION"
+  ],
+  "expected_trace_topology": [
+    "capture",
+    "quality_check",
+    "pad_detection",
+    "policy_decision",
+    "audit_write"
+  ],
+  "actual_decision": "REJECT",
+  "trace_id": "abc123",
+  "evidence_status": "COMPLETE",
+  "evidence_completeness_score": 1.0,
+  "confidence_update": "positive",
+  "residual_risk": "reduced but not eliminated",
+  "decision": "conditional_go_pending_edge_case_review"
+}

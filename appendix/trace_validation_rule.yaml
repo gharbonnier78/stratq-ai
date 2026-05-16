@@ -1,0 +1,19 @@
+rule: biometric_verification_trace_complete
+
+required_spans:
+  - capture
+  - quality_check
+  - biometric_match
+  - policy_decision
+  - audit_write
+
+required_attributes:
+  - transaction_id
+  - identity_state
+  - biometric_score
+  - decision_reason
+
+validation:
+  same_trace_id: true
+  missing_span_behavior: fail_evidence
+  wrong_decision_behavior: fail_product
