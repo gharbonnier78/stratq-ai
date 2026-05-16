@@ -23,6 +23,16 @@ Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
 
 You may share and adapt the material, including for commercial purposes, provided that you give appropriate credit, indicate changes, and distribute adaptations under the same license.
 
+### Code and scripts
+
+All source code, scripts, generators, validators, schemas, and automation examples are licensed under:
+
+Apache License 2.0.
+
+### No endorsement
+
+Modified versions must not imply endorsement by the original author unless explicitly agreed.
+
 ## Purpose
 
 This is the first public-style proposal release of the whitepaper. It is intentionally framed as a draft for critique, discussion, pilot implementation, and future refinement — not as a peer-reviewed publication.
