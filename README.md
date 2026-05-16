@@ -5,6 +5,12 @@
 **Author:** Guillaume Harbonnier  
 **Status:** Initial proposal draft. Not peer reviewed.
 
+<p align="center">
+  <a href="./Whitepaper_PDF_v1_0_initial_draft.pdf">
+    <img src="https://img.shields.io/badge/Open-White%20Paper-0B5FFF?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="View PDF">
+  </a>
+</p>
+
 ## Purpose
 
 This is the first public-style proposal release of the whitepaper. It is intentionally framed as a draft for critique, discussion, pilot implementation, and future refinement — not as a peer-reviewed publication.
@@ -44,6 +50,8 @@ The strategic value of testing lies in:
 ```text
 .
 ├── README.md
+|── LICENSE-APACHE-2.0.md
+|── LICENSE-CC-BY-SA-4.0.md
 ├── paper/
 │   ├── main.tex
 │   └── main.pdf
