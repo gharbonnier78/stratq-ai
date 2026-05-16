@@ -11,6 +11,18 @@
   </a>
 </p>
 
+## License
+
+This repository uses a dual-license structure.
+
+### Whitepaper and documentation
+
+The whitepaper, diagrams, figures, and non-code documentation are licensed under:
+
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+
+You may share and adapt the material, including for commercial purposes, provided that you give appropriate credit, indicate changes, and distribute adaptations under the same license.
+
 ## Purpose
 
 This is the first public-style proposal release of the whitepaper. It is intentionally framed as a draft for critique, discussion, pilot implementation, and future refinement — not as a peer-reviewed publication.
